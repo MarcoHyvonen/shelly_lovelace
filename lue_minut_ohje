@@ -5,4 +5,4 @@ Tämä esimerkki näyttää, kuinka Home Assistantin kojelaudan kuvakkeiden vär
 2) Huom! Katso esimerkkikuva 2 (shelly_hidden.png)! Osa Shellyn sensoreista, esimerkiksi laitteen lämpötila-anturi on piilotettu oletuksena. Löydät kyseiset piilotetut anturit: "Asetukset" - "Laitteet ja palvelut" ja valitse Shelly integraatiosta haluamasi laite ja Diagnostiikka kohdasta klikkaa "piilotetut" tekstiä ja klikkaa haluamaasi sensoria. Avautuvasta ikkunasta paina "Enable"
 
 3) Esimerkkikoodissa on kolmeen laitteen arvot koodina (astianpesukone, pyykinpesukone ja kuivausrumpu). Kopioi/poista näitä haluamallasi tavalla, jos haluat näyttää pinossa useita laitteita. Katso esimerkkikuva 3 (usea_shelly_ryhmiteltyna).
-   - 
+   - MUISTATHAN, ETTÄ SINUN TULEE KOODIIN PÄIVITTÄÄ SENSORIEN NIMET VASTAAMAAN OMIA SENSOREIDEN NIMEÄMISIÄ!
