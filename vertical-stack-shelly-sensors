@@ -57,3 +57,116 @@ cards:
                 green;
               {% endif %}
             }
+      - entity: switch.pyykinpesukone_2
+        card_mod:
+          style: |
+            :host { 
+              --paper-item-icon-color:
+              {% if is_state('switch.pyykinpesukone_2', 'on') %}            
+                orange !important;
+              {% else %}
+                gray;
+              {% endif %}
+            }
+      - entity: sensor.pyykinpesukone_power_2
+        card_mod:
+          style: |
+            :host { 
+              --paper-item-icon-color:
+              {% if states('sensor.pyykinpesukone_power_2')|float > 5 %}            
+                darkred !important;
+              {% else %}
+                gray;
+              {% endif %}
+            }
+      - entity: binary_sensor.pyykinpesukone_overheating_2
+        card_mod:
+          style: |
+            :host { 
+              --paper-item-icon-color:
+              {% if is_state('binary_sensor.pyykinpesukone_overheating_2', 'off') %}           
+                green;
+              {% else %}
+                darkred !important;
+              {% endif %}
+            }
+      - entity: binary_sensor.pyykinpesukone_overpowering_2
+        card_mod:
+          style: |
+            :host { 
+              --paper-item-icon-color:
+              {% if is_state('binary_sensor.pyykinpesukone_overpowering_2', 'off') %}           
+                green;
+              {% else %}
+                darkred !important;
+              {% endif %}
+            }
+      - entity: sensor.pyykinpesukone_device_temperature_2
+        card_mod:
+          style: |
+            :host { 
+              --paper-item-icon-color:
+              {% if states('sensor.pyykinpesukone_device_temperature_2')|float > 50 %}            
+                darkred !important;
+              {% else %}
+                green;
+              {% endif %}
+            }
+      - entity: switch.kuivausrumpu
+        card_mod:
+          style: |
+            :host { 
+              --paper-item-icon-color:
+              {% if is_state('switch.kuivausrumpu', 'on') %}            
+                orange !important;
+              {% else %}
+                gray;
+              {% endif %}
+            }
+      - entity: sensor.kuivausrumpu_power
+        card_mod:
+          style: |
+            :host { 
+              --paper-item-icon-color:
+              {% if states('sensor.kuivausrumpu_power')|float > 5 %}            
+                darkred !important;
+              {% else %}
+                gray;
+              {% endif %}
+            }
+      - entity: binary_sensor.kuivausrumpu_overheating
+        card_mod:
+          style: |
+            :host { 
+              --paper-item-icon-color:
+              {% if is_state('binary_sensor.kuivausrumpu_overheating', 'off') %}           
+                green;
+              {% else %}
+                darkred !important;
+              {% endif %}
+            }
+      - entity: binary_sensor.kuivausrumpu_overpowering
+        card_mod:
+          style: |
+            :host { 
+              --paper-item-icon-color:
+              {% if is_state('binary_sensor.kuivausrumpu_overpowering', 'off') %}           
+                green;
+              {% else %}
+                darkred !important;
+              {% endif %}
+            }
+      - entity: sensor.kuivausrumpu_device_temperature
+        card_mod:
+          style: |
+            :host { 
+              --paper-item-icon-color:
+              {% if states('sensor.kuivausrumpu_device_temperature')|float > 50 %}            
+                darkred !important;
+              {% else %}
+                green;
+              {% endif %}
+            }
+    state_color: false
+    title: Pesukoneet ja kuivausrumpu
+    show_header_toggle: false
