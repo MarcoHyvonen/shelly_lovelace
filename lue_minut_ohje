@@ -1,0 +1,7 @@
+Tämä esimerkki näyttää, kuinka Home Assistantin kojelaudan kuvakkeiden väriä voi muuttaa Shellyn laitteiden sensoreiden arvon avulla.
+
+1) Huom! Vaatii toimiakseen card mod asentamisen HA: https://github.com/thomasloven/lovelace-card-mod
+
+2) Huom! Katso esimerkkikuva 2! Osa Shellyn sensoreista, esimerkiksi laitteen lämpötila-anturi on piilotettu oletuksena. Löydät kyseiset piilotetut anturit: "Asetukset" - "Laitteet ja palvelut" ja valitse Shelly integraatiosta haluamasi laite ja Diagnostiikka kohdasta klikkaa "piilotetut" tekstiä ja klikkaa haluamaasi sensoria. Avautuvasta ikkunasta paina "Enable"
+
+3) Esimerkkikoodissa on yhden laitteen arvot. Kopioi näitä haluamallasi tavalla, jos haluat näyttää pinossa useita laitteita (katso esimerkkikuva 3).
